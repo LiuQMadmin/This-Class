@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>面向对象编程</title>
+  </head>
+  <body>
+    <div>面向对象编程</div>
+    <!-- 
+        对象是什么
+        构造函数
+            new 
+            constructor
+        原型对象
+        创建对象的5中模式
+            对象字面量
+            工厂模式
+            构造函数模式
+            原型模式
+            组合模式
+     -->
+    <script>
+      {
+        //  面向对象编程（OOP）：具有灵活性，代码可复用性，高度模块化等特点
+        // 对象是单个实物的抽象
+        // 对象是一个容器，封装对应的属性和方法
+        // 一类实物的共同特征，类就是对象的模板
+        // js不是基于类的，而是基于构造函数（constructor），和原型链（prototype）
+        function Dog(name, age) {
+          // Dog是一个构造函数，为了与普通函数区分，构造函数的第一个字母要大写，
+          //   函数体内使用this关键字，必须使用new关键字使用这个对象
+          this.name = name;
+          this.age = age;
+        }
+        var dog1 = new Dog("汪汪", 3);
+      }
+      {
+        //   使用构造函数创建对象的利和弊
+      }
+    </script>
+  </body>
+</html>
